@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BlackJack</title>
+    <link rel="icon" href="../img/mesa-de-poquer.png" type="image/png" sizes="32x32">
+    <link rel="stylesheet" href="../styles/juego.css" />
+  </head>
+
+  <body>
+    <nav>
+      <ul class="navbar">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="./juego.html" class="active">Juego</a></li>
+        <li><a href="./estadisticas.html">Estadisticas</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <img src="../img/logo doranger.png" class="logo" alt="" />
+      <div class="minicontainer">
+        <div id="jugador2">
+          <div id="jugador">
+            <div id="botones">
+              <button id="empezar" class="disabled">Empezar</button>
+              <button id="carta" class="btn btn-success">
+                Sacar una carta
+              </button>
+              <button id="parar" class="btn-success">Parar</button>
+            </div>
+            <p id="mensaje"></p>
+            <div id="sumatoria" class="sumatoria"></div>
+            <div id="cartasJugador" class="cartas"></div>
+            <p id="puntuacionJugador"></p>
+          </div>
+          <div id="curpier">
+            <div id="cartasPC"></div>
+            <div id="sumatoriaPC" class="sumatoriaPC"></div>
+          </div>
+          
+          <div class="contenedor-ganador"></div>
+        </div>
+        <div class="card">                
+            <div class="bg">
+                <h3>Haga su apuesta:</h3>
+                <form>
+                    <input class="input" name="text" type="text">
+                </form>
+                <p>Saldo: <b><span id="saldo"></span><span class="saldo"> $</span></p>
+
+            </div>                
+            <div class="blob"></div>
+            
+          </div>
+      </div>
+
+      <button id="finalizar" onclick="location.href='../index.html'">Finalizar </button>
+    </div>
+    <script src="../main/juego.js"></script>
+  </body>
+</html>

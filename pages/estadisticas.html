@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initialscale=1.0">
+    <title>Estadisticas-BlackJack</title>
+    <link rel="icon" href="../img/diagrama (2).png" type="image/png" sizes="32x32">
+    <link rel="stylesheet" href="../styles/estadisticas.css">
+</head>
+
+<body>
+    <nav>
+        <ul class="navbar">
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="./juego.html">Juego</a></li>
+          <li><a href="./estadisticas.html" class="active">Estadisticas</a></li>
+        </ul>
+      </nav>
+      
+
+    <div class="container">
+        <img src="../img/logo doranger.png" class="logo" alt="">
+        <div id="jugador2">
+            <h1 class="titulo">ESTADISTICAS</h1>
+            <div id="estadisticas">
+                <table>
+                    <tr>
+                        <th>Victorias del jugador</th>
+                        <th>Victorias de la computadora</th>
+                        <th>Sin ganador</th>
+                    </tr>
+                    <tr>
+                        <td id="jugadorGana">0</td>
+                        <td id="PCGana">0</td>
+                        <td id="empates">0</td>
+                    </tr>
+                </table>
+                <button id="reiniciarEstadistica">Reiniciar Estadisticas</button>
+                <div class="estadistica"> <img src="../img/estadistica.gif" alt=""></div>
+            </div>
+
+
+            <div id="info"></div>
+
+        </div>
+
+        <script src="../main/estadisticas.js"></script>
+    </body>
+
+</html>
